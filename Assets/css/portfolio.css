@@ -17,6 +17,27 @@ body {
     color: #328a85;
 }
 
+main {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    margin-bottom: 100px;
+}
+
+main h1 {
+    color:  #4aaaa5;
+    font-family: 'Hoefler Text', Times, serif;
+    font-weight: bold;
+    padding-top: .6em;
+}
+
+main .card-body {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    background-color: #78d6d1;
+}
+
 footer {
     position: fixed; 
     bottom: 0;
@@ -50,6 +71,11 @@ footer p {
 
     .nav-link {
         font-size: 2.6vw;
+    }
+
+    main h1 {
+        text-align: center;
+        font-size: 6.2vw;
     }
 
 }
