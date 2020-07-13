@@ -1,21 +1,85 @@
 body {
-    background-color: lightgray;
+    background-image: url(../../brushed.png);
 }
 
-header h1 {
+.navbar-brand {
+    font-size:3.2vw;
+    font-family: 'Hoefler Text', Times, serif;
+    font-weight: bold;
+    letter-spacing: .05em;
     background-color:  #4aaaa5;
+    margin: 0;
+    padding-top: .7em;
+    padding-bottom: .5em;
+}
+
+.nav-link {
+    color: #328a85;
+}
+
+main {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    margin-bottom: 100px;
+}
+
+main h1 {
+    color:  #4aaaa5;
+    font-family: 'Hoefler Text', Times, serif;
+    font-weight: bold;
+    padding-top: .6em;
+}
+
+main img {
+    margin-bottom: 2vh;
 }
 
 footer {
-    position: absolute; 
-    bottom: 0; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0;
+}
+
+footer .container-fluid {
+    padding: 0;
+    background-color: grey;
     width: 100%;
 }
 
-footer section {
-    background-color: grey;
+footer .container-fluid hr {
+    border: 3px solid rgb(74,170,164);
+    margin: 0;
+    padding: 0;
 }
 
-footer hr {
-    border: 3px solid rgb(0, 182, 182);
+footer p {
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-link {
+        font-size: 2.6vw;
+    }
+
+    main h1 {
+        text-align: center;
+        font-size: 6.2vw;
+    }
+
+}
+
+@media screen and (min-width: 1037px) {
+
+    .navbar-brand {
+        font-size: 34px;
+    }
+
 }

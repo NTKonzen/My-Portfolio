@@ -10,6 +10,8 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="./Assets/css/reset.css" type="text/css">
+
     <!-- Boostrap CSS Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -19,41 +21,37 @@
 
 <body class="container-fluid">
 
-    <header class="navbar row bg-light mb-5">
+    <header class="navbar row bg-light pt-0 pb-0 mb-5">
 
-        <h1 class="navbar-brand mb-0 h1 col-sm-12 col-md-4 col-xl-3 text-center text-light">Nicholas Konzen</h1>
+        <h1 class="navbar-brand m-0 h1 col-sm-12 col-md-4 col-xl-4 text-center text-light">Nicholas Konzen</h1>
 
-        <nav>
+            <ul class="nav text-center col-xs-12 col-sm-12 col-md-7 col-xl-7  justify-content-center justify-content-sm-center justify-content-md-end">
 
-            <ul class="nav text-center justify-content-end">
+                <li class="nav-item border-right">
 
-                <li class="nav-item">
+                  <a class="nav-link disabled" href="./index.html">About</a>
 
-                  <a class="nav-link disabled" href="index.html">About</a>
+                </li>
+
+                <li class="nav-item border-right">
+
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
 
                 </li>
 
                 <li class="nav-item">
 
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="./contact.html">Contact</a>
 
                 </li>
 
-                <li class="nav-item">
-
-                  <a class="nav-link" href="contact.html">Contact</a>
-
-                </li>
-
-              </ul>
-
-        </nav>
+            </ul>
 
     </header>
 
-    <main class="container-xl bg-light">
+    <main class="container-xl bg-light float-left">
 
-        <h1 class="col-md-12 text-info">About Me</h1>
+        <h1 class="col-md-12">About Me</h1>
 
         <hr>
 
@@ -62,6 +60,8 @@
             <img src="./Assets/Headshot.jpg" alt="" class="img-fluid col-sm-12 col-md-6 col-xl-4">
 
             <p class="col-md-6 col-xl-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, animi debitis dolore, nihil assumenda sequi ea dicta sit voluptas impedit placeat enim doloribus error eveniet asperiores repudiandae eius ex, nisi aliquid vel! Molestiae, omnis distinctio nam commodi temporibus maxime delectus exercitationem eos quo quidem nisi voluptatum porro rerum ratione ea?</p>
+
+            <span class="col-12"></span>
         
         </section>
 
@@ -69,14 +69,13 @@
 
     <footer class="footer">
 
-        <hr>
+        <div class="container-fluid">
 
-        <section>
+            <hr>
 
-            <p class="footer-copyright text-center py-3">© 2020</p>
+            <p class="text-center py-3 footer-copyright">© 2020</p>
 
-        </section>
-
+          </div>
 
     </footer>
 
