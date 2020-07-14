@@ -36,6 +36,23 @@ main .btn-primary {
 
 }
 
+.socialLinks {
+    position: fixed;
+    right: 8px;
+    bottom: 70px;
+}
+
+.social {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: 0 2px;
+}
+
+.social:hover {
+    opacity: .75;
+}
+
 footer {
     position: fixed; 
     bottom: 0;

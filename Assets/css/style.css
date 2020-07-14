@@ -32,6 +32,31 @@ main h1 {
 
 main img {
     margin-bottom: 2vh;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+main p {
+    font-weight: 400;
+    color: grey;
+}
+
+.socialLinks {
+    position: fixed;
+    right: 8px;
+    bottom: 70px;
+}
+
+.social {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin: 0 2px;
+}
+
+.social:hover {
+    opacity: .75;
 }
 
 footer {
@@ -69,12 +94,27 @@ footer p {
         font-size: 2.6vw;
     }
 
+    main {
+        margin-bottom: 40px;
+    }
+
     main h1 {
         text-align: center;
         font-size: 6.2vw;
     }
 
+    main p {
+        font-size: 3vw;
+    }
+
+    .socialLinks {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
 }
+
 
 @media screen and (min-width: 1037px) {
 
