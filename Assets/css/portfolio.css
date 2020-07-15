@@ -43,6 +43,11 @@ main .card-body {
     box-shadow: 0px 15px 17px -14px rgba(0,0,0,0.3);
 }
 
+.card-text {
+    color: rgb(99, 99, 99);
+    font-weight: 500;
+}
+
 .socialLinks {
     position: fixed;
     right: 8px;

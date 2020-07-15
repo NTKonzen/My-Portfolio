@@ -84,6 +84,21 @@ footer p {
     width: 100%;
 }
 
+@media screen and (max-height: 767px) and (max-width: 1305px) {
+
+
+    main {
+        margin-bottom: 40px;
+    }
+
+    .socialLinks {
+        position: static;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+}
+
 @media screen and (max-width: 767px) {
 
     .navbar {
