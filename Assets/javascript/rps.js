@@ -1,8 +1,6 @@
 // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
 var comChoices = ["rock", "paper", "scissors"];
 
-var randomRPSChoice = Math.floor(Math.random() * 3);
-
 // Creating variables to hold the number of wins, losses, and ties. They start at 0.
 var wins = 0;
 var losses = 0;
@@ -10,130 +8,77 @@ var ties = 0;
 
 let playAgain = false;
 
+let comChoice;
+
 function rps() {
 
     playAgain = true;
 
-    while (playAgain === true) {
+    while (playAgain) {
+
+        let result;
 
         let playerChoice = prompt('Enter \'rock\', \'paper\' or \'scissors\' to play!');
 
-        let comChoice = comChoices[randomRPSChoice];
+        if (playerChoice === null || playerChoice.toLowerCase() !== 'rock' && playerChoice.toLowerCase() !== 'paper' && playerChoice.toLowerCase() !== 'scissors') {
+            return;
+        };
+
+        var randomRPSChoice = Math.floor(Math.random() * 3);
+
+        comChoice = comChoices[randomRPSChoice];
 
         alert(`The computer has chosen ${comChoice}`);
 
-        if (playerChoice === comChoice) {
+        if (playerChoice.toLowerCase() === comChoice) {
 
-            alert('You tied with the computer!');
+            result = 'tied with the computer';
 
             ties++;
 
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
+        } else if (
+        
+            playerChoice.toLowerCase() === 'rock' 
+            && comChoice === 'paper' 
+        
+            || playerChoice.toLowerCase() === 'paper' 
+            && comChoice === 'scissors' 
+        
+            || playerChoice.toLowerCase() === 'scissors'
+            && comChoice === 'rock'
+         
+        ) {
 
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
-
-        } else if (playerChoice === 'rock' && comChoice === 'paper') {
-
-            alert('You lose!');
-
-            losses++;
-
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
-
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
-
-        } else if (playerChoice === 'rock' && comChoice === 'scissors') {
-
-            alert('You win!');
-
-            wins++;
-
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
-
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                break;
-            };
-
-        } else if (playerChoice === 'paper' && comChoice === 'rock') {
-
-            alert('You win!');
-
-            wins++;
-
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
-
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
-
-        } else if (playerChoice === 'paper' && comChoice === 'scissors') {
-
-            alert('You lose!');
+            result = 'lose';
 
             losses++;
 
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
+        } else if (
+            
+            playerChoice.toLowerCase() === 'rock' 
+            && comChoice === 'scissors' 
 
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
+            || playerChoice.toLowerCase() === 'scissors' 
+            && comChoice === 'paper' 
 
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
+            || playerChoice.toLowerCase() === 'paper' 
+            && comChoice === 'rock'
+        
+        ) {
 
-        } else if (playerChoice === 'scissors' && comChoice === 'rock') {
-
-            alert('You lose!');
-
-            losses++;
-
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
-
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
-
-        } else if (playerChoice === 'scissors' && comChoice === 'paper') {
-
-            alert('You win!');
+            result = 'win';
 
             wins++;
-
-            alert('You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
-
-            again = prompt('Do you want to play again? Enter \'yes\' or \'no\'');
-
-            if (again === 'yes') {
-                playAgain = true;
-            } else if (again === 'no') {
-                playAgain = false;
-            };
 
         };
+
+        alert('You '+result+'! You have ' + wins + ' wins, ' + losses + ' losses, and ' + ties + ' ties');
+
+        playAgain = confirm('Do you want to play again? Click \'Confirm\' for yes and \'Cancel\' for no');
+
+        if (playAgain === null) {
+            return;
+        }
 
     };
 
