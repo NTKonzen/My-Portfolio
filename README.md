@@ -11,7 +11,7 @@ Thank you to [BootStrap 4.4](https://getbootstrap.com) for making this project t
 * [My Portfolio](https://ntkonzen.github.io/My-Portfolio/portfolio.html)
 * [Contact Me](https://ntkonzen.github.io/My-Portfolio/contact.html)
 
-![alt text](./Assets/Images/ScreenShot.png "Logo Title Text 1")
+![A screenshot of the deployed About page](./Assets/Images/ScreenShot.png)
 
 ---
 Copyright (c) 2020 Konzen, Nicholas
