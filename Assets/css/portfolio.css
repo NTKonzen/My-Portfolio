@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 body {
     background-image: url(../../brushed.png);
+}
+
+header {
+    background-color: #011936;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -7,14 +13,35 @@ body {
     font-family: 'Hoefler Text', Times, serif;
     font-weight: bold;
     letter-spacing: .05em;
-    background-color: #4aaaa5;
+    background-color: #011936;
     margin: 0;
     padding-top: .7em;
     padding-bottom: .5em;
 }
 
+.logo-name {
+    color: #F0F7EE;
+    font-size: 2em;
+    line-height: 50px;
+    vertical-align: bottom;
+    font-family: Staatliches;
+    font-weight: bold;
+}
+
 .nav-link {
-    color: #328a85;
+    color: #F0F7EE;
+    font-size: 2vw;
+    transition-duration: .08s;
+}
+
+.nav-link:hover {
+    color: #F0F7EE;
+    transform: translate(0, -.3em)
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 2vw;
 }
 
 main {
@@ -89,17 +116,29 @@ footer {
 
 footer .container-fluid {
     padding: 0;
-    background-color: grey;
+    background-color: rgb(1, 25, 54);
     width: 100%;
 }
 
-footer .container-fluid hr {
-    border: 3px solid rgb(74, 170, 164);
+.hr-footer {
+    border: 3px solid rgb(70, 83, 98);
+    margin: 0;
+    padding: 0;
+}
+
+.hr-header {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border: 3px solid rgb(70, 83, 98);
     margin: 0;
     padding: 0;
 }
 
 footer p {
+    color: rgb(240, 247, 238);
     margin: 0;
     width: 100%;
 }
