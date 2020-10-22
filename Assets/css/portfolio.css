@@ -137,12 +137,11 @@ footer .container-fluid {
     padding: 0;
 }
 
-.carousel-indicators {
-    bottom: -40px;
-}
-
 .carousel-caption {
-    border-radius: 10px;
+    position: relative;
+    left: 0;
+    top: 0;
+    /* bottom: -100px; */
 }
 
 .btn-dark {
