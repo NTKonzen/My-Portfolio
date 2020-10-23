@@ -6,6 +6,7 @@ html {
 
 body {
     background-image: url(../../brushed.png);
+    min-height: 100vh;
     padding-bottom: 0.1vh;
 }
 
@@ -72,6 +73,11 @@ main {
     margin-bottom: 100px;
 }
 
+h1 {
+    font-family: Staatliches, sans-serif;
+    font-size: 5.5vw;
+}
+
 .carousel-caption {
     position: relative;
     left: 0;
@@ -87,6 +93,22 @@ main {
 .btn-dark {
     font-size: 1.4vw;
     background-color: black;
+}
+
+.btn-dark {
+    background-color: rgb(12, 12, 12);
+}
+
+.btn-green {
+    font-size: 1.4vw;
+    background-color: #5C7457;
+    color: #F0F7EE;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-green:hover {
+    background-color: #658060;
+    color: #F0F7EE;
 }
 
 footer {
