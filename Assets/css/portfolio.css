@@ -50,88 +50,6 @@ header {
     right: 2vw;
 }
 
-main {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
-    -moz-box-shadow: 7px 6px 19px -3px rgba(0, 0, 0, 0.5);
-    box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
-    margin-bottom: 100px;
-}
-
-main h1 {
-    color: #4aaaa5;
-    font-family: 'Hoefler Text', Times, serif;
-    font-weight: bold;
-    padding-top: .6em;
-}
-
-.card {
-    border: none;
-    transition: .4s;
-}
-
-.card:hover {
-    transform: scale(1.03) translate(-6px, -5px);
-    box-shadow: 10px 10px 17px -5px rgba(0, 0, 0, 0.5);
-}
-
-main .card-body {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    width: 100%;
-    background-color: #78d6d1;
-    color: black;
-    -webkit-box-shadow: 0px 15px 17px -14px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 15px 17px -14px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 15px 17px -14px rgba(0, 0, 0, 0.3);
-}
-
-.card-text {
-    color: rgb(99, 99, 99);
-    font-weight: 500;
-}
-
-#placeholder {
-    visibility: hidden;
-}
-
-.socialLinks {
-    position: fixed;
-    right: 8px;
-    bottom: 70px;
-}
-
-.social {
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    margin: 0 2px;
-}
-
-.social:hover {
-    opacity: .75;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    padding: 0;
-}
-
-footer .container-fluid {
-    padding: 0;
-    background-color: rgb(1, 25, 54);
-    width: 100%;
-}
-
-.hr-footer {
-    border: 3px solid rgb(70, 83, 98);
-    margin: 0;
-    padding: 0;
-}
-
 .hr-header {
     width: 100%;
     box-sizing: border-box;
@@ -141,6 +59,13 @@ footer .container-fluid {
     border: 3px solid rgb(70, 83, 98);
     margin: 0;
     padding: 0;
+}
+
+main {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    -moz-box-shadow: 7px 6px 19px -3px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.5) 7px 6px 19px -3px;
+    margin-bottom: 100px;
 }
 
 .carousel-caption {
@@ -161,7 +86,24 @@ footer .container-fluid {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0;
     z-index: 20;
+}
+
+footer .container-fluid {
+    padding: 0;
+    background-color: rgb(1, 25, 54);
+    width: 100%;
+}
+
+.hr-footer {
+    border: 3px solid rgb(70, 83, 98);
+    margin: 0;
+    padding: 0;
 }
 
 footer p {
@@ -173,26 +115,5 @@ footer p {
 @media screen and (max-width: 767px) {
     .navbar {
         padding: 0;
-    }
-    .nav-link {
-        font-size: 2.6vw;
-    }
-    main {
-        margin-bottom: 40px;
-    }
-    main h1 {
-        text-align: center;
-        font-size: 6.2vw;
-    }
-    .socialLinks {
-        position: static;
-        margin: 0 auto;
-        margin-bottom: 80px;
-    }
-}
-
-@media screen and (min-width: 1037px) {
-    .navbar-brand {
-        font-size: 34px;
     }
 }
