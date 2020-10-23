@@ -6,7 +6,7 @@ html {
 
 body {
     background-image: url(../../brushed.png);
-    height: 100%;
+    padding-bottom: 0.1vh;
 }
 
 header {
@@ -25,10 +25,14 @@ header {
     padding-bottom: .5em;
 }
 
+.navbar-brand img {
+    height: 5vw;
+}
+
 .logo-name {
     color: #F0F7EE;
-    font-size: 2em;
-    line-height: 50px;
+    font-size: 4.5vw;
+    height: 5vw;
     vertical-align: bottom;
     font-family: Staatliches;
     font-weight: bold;
@@ -72,7 +76,7 @@ main {
     position: relative;
     left: 0;
     top: 0;
-    /* bottom: -100px; */
+    color: #F0F7EE;
 }
 
 .project-title {
