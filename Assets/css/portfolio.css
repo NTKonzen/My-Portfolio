@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+html {
+    background-color: #011936;
+}
+
 body {
     background-image: url(../../brushed.png);
+    height: 100%;
 }
 
 header {
@@ -144,8 +150,18 @@ footer .container-fluid {
     /* bottom: -100px; */
 }
 
+.project-title {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+}
+
 .btn-dark {
     font-size: 1.4vw;
+    background-color: black;
+}
+
+footer {
+    z-index: 20;
 }
 
 footer p {
