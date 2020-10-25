@@ -103,7 +103,7 @@ p {
     background-color: black;
 }
 
-.btn-dark {
+.btn-dark:hover {
     background-color: rgb(12, 12, 12);
 }
 

@@ -69,6 +69,39 @@ header {
     padding: 0;
 }
 
+h1 {
+    font-family: Staatliches, sans-serif;
+    font-size: 5.5vw;
+}
+
+article {
+    color: #F0F7EE;
+}
+
+article img {
+    object-fit: cover;
+}
+
+.btn-dark {
+    font-size: 1.4vw;
+    background-color: black;
+    color: #F0F7EE !important;
+}
+
+.btn-dark:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.btn-blue {
+    font-size: 1.4vw;
+    background-color: #0072b1;
+    color: #F0F7EE !important;
+}
+
+.btn-blue:hover {
+    background-color: #0083c9;
+}
+
 footer {
     position: fixed;
     bottom: -1px;
@@ -96,15 +129,26 @@ footer p {
     width: 100%;
 }
 
-@media screen and (max-width: 960px) {}
+@media screen and (max-width: 960px) {
+    .btn {
+        font-size: 2vw;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .navbar {
         padding: 0;
     }
+    .btn {
+        font-size: 2.5vw;
+    }
 }
 
-@media screen and (max-width: 540px) {}
+@media screen and (max-width: 540px) {
+    .btn {
+        font-size: 3.2vw;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     .logo-name {
