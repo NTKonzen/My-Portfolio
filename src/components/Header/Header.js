@@ -21,7 +21,7 @@ function Header({ isPortfolio, isAbout, isContact }) {
         <div>
             <header className='navbar navbar-expand'>
 
-                <Link className="navbar-brand py-lg-2 py-xl-1" to="./index.html">
+                <Link className="navbar-brand py-lg-2 py-xl-1" to="/about">
 
                     <img src={logo_mint} className="d-inline-block align-middle ml-3" alt=""></img>
 
