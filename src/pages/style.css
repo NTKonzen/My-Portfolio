@@ -65,6 +65,7 @@ header {
     bottom: -6px;
     left: 0;
     border: 3px solid rgb(70, 83, 98);
+    background-color: rgb(70, 83, 98);
     margin: 0;
     padding: 0;
 }
@@ -120,6 +121,7 @@ footer .container-fluid {
 
 .hr-footer {
     border: 3px solid rgb(70, 83, 98);
+    background-color: rgb(70, 83, 98);
     margin: 0;
     padding: 0;
 }
