@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ContactForm() {
+function ContactForm({ handleSubmit }) {
 
     const [phone, setPhone] = useState('');
 
@@ -30,24 +30,6 @@ function ContactForm() {
                 handlePhoneInput({ target: { value: newNumber } })
             }
         }
-    }
-
-    function handleSubmit(e) {
-        let { target: {
-            0: { value: firstName },
-            2: { value: email },
-            3: { value: phoneNumber },
-            4: { value: message }
-        } } = e;
-        let nameValid = firstName.length <= 15 && firstName.length > 0;
-        let emailValid = /.{1,}@[^.]{1,}/.test(email);
-        let phoneValid = /^\(\d{3}\) \d{3}-\d{4,8}$/.test(phoneNumber);
-        let messageValid = message.length <= 500 && message.length > 0;
-        // console.log("nameValid:", nameValid);
-        // console.log("emailValid:", emailValid);
-        // console.log("phoneValid:", phoneValid);
-        // console.log("messageValid:", messageValid);
-        if (![nameValid, emailValid, phoneValid, messageValid].every(v => v)) e.preventDefault();
     }
 
     return (
