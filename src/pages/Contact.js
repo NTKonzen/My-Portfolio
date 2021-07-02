@@ -35,13 +35,35 @@ function Contact() {
         }
     }
 
+    function handleSubmit(e) {
+        let { target: {
+            0: { value: firstName },
+            2: { value: email },
+            3: { value: phoneNumber },
+            4: { value: message }
+        } } = e;
+        let nameValid = firstName.length <= 15 && firstName.length > 0;
+        let emailValid = /.{1,}@[^.]{1,}/.test(email);
+        let phoneValid = /^\(\d{3}\) \d{3}-\d{4,8}$/.test(phoneNumber);
+        let messageValid = message.length <= 500 && message.length > 0;
+        console.log("nameValid:", nameValid);
+        console.log("emailValid:", emailValid);
+        console.log("phoneValid:", phoneValid);
+        console.log("messageValid:", messageValid);
+        if (![nameValid, emailValid, phoneValid, messageValid].every(v => v)) e.preventDefault();
+    }
+
     return (
         <div>
             <Header isContact={true}></Header>
             <h1>Contact</h1>
             <div className="container">
                 <div className="row">
-                    <form className="jotform-form" action="https://submit.jotform.com/submit/211727980373057/" method="post" name="form_211727980373057" id="211727980373057" acceptCharset="utf-8" autoComplete="on">
+                    <form className="jotform-form" action="https://submit.jotform.com/submit/211727980373057/"
+                        method="post" name="form_211727980373057"
+                        id="211727980373057" acceptCharset="utf-8"
+                        autoComplete="on" onSubmit={handleSubmit}>
+
                         <label className="form-sub-label" htmlFor="first_4" id="sublabel_4_first"
                             aria-hidden="false"> First Name </label>
                         <input type="text" id="first_4" name="q4_name[first]" size="10"
@@ -54,7 +76,7 @@ function Contact() {
 
                         <label className="form-sub-label" htmlFor="input_5" id="sublabel_input_5"
                             aria-hidden="false"> Email </label>
-                        <input type="email" id="input_5" name="q5_email"
+                        <input id="input_5" name="q5_email"
                             size="10" data-component="email" aria-labelledby="sublabel_input_5" />
 
                         <label className="form-sub-label" htmlFor="input_7_full" id="sublabel_7_masked"
