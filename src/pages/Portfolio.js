@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-import "../components/Header/style.css";
+import './style.css'
 
 import innScreenshot from "../components/assets/images/inn-screenshot.jpeg";
 import mealPlanner from "../components/assets/images/mealplanner-screenshot.jpeg";
@@ -12,7 +12,7 @@ function Portfolio() {
     return (
         <div>
             <Header isPortfolio={true}></Header>
-            <main className="container-fluid p-0 pt-3">
+            <main className="container-fluid p-0 pt-3 portfolio-main">
 
                 <h1 className='text-center mb-3'>Portfolio</h1>
 
