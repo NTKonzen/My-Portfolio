@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route exact path="/contact" >
           <Contact />
+        </Route>
+        <Route exact path="/thankyou" >
+          <ThankYou />
         </Route>
       </Router>
     </div>

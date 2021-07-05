@@ -132,6 +132,20 @@ footer p {
     width: 100%;
 }
 
+.thanks {
+    font-size: clamp(15px, 3vw, 45px);
+    font-family: Staatliches, sans-serif;
+}
+
+.thanks-card {
+    border-radius: 15px;
+}
+
+.thanks-message {
+    font-size: clamp(13px, 2.5vw, 40px);
+    font-family: Staatliches, sans-serif;
+}
+
 @media screen and (max-width: 960px) {
     .btn {
         font-size: 2vw;
