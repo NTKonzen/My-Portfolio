@@ -3,14 +3,11 @@ import { useState, useEffect } from "react";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ContactForm from "../components/ContactForm/ContactForm";
+import ErrorDisplay from "../components/ErrorDisplay/ErrorDisplay";
 
 function Contact() {
 
     const [formErrors, setErrors] = useState([]);
-
-    useEffect(() => {
-        console.log(formErrors)
-    }, [formErrors])
 
     function handleSubmit(e) {
         let newErrors = [];
@@ -64,6 +61,7 @@ function Contact() {
             <h1>Contact</h1>
             <div className="container">
                 <div className="row">
+                    <ErrorDisplay formErrors={formErrors} />
                     <ContactForm handleSubmit={handleSubmit} />
                 </div>
             </div>
