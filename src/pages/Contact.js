@@ -58,14 +58,12 @@ function Contact() {
     return (
         <div>
             <Header isContact={true}></Header>
-            <h1>Contact</h1>
-            <div className="container">
-                <div className="row">
-                    <ErrorDisplay formErrors={formErrors} />
-                    <ContactForm handleSubmit={handleSubmit} />
-                </div>
+            <div className="container-fluid pt-3">
+                <h1 className='text-center mb-2'>Contact</h1>
+                <ErrorDisplay formErrors={formErrors} />
+                <ContactForm handleSubmit={handleSubmit} />
+                <Footer />
             </div>
-            <Footer />
         </div>
     )
 }

@@ -14,7 +14,7 @@ function Portfolio() {
             <Header isPortfolio={true}></Header>
             <main className="container-fluid p-0 pt-3">
 
-                <h1 className='text-center mb-2'>Portfolio</h1>
+                <h1 className='text-center mb-3'>Portfolio</h1>
 
                 <div id="carouselExampleIndicators" className="carousel slide mt-1" data-ride="carousel" data-interval='false'>
 
