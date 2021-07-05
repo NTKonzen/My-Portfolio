@@ -1,5 +1,5 @@
 .list-group {
-    font-size: 2vw;
+    font-size: clamp(16px, 2vw, 2.2vh);
     font-weight: 500;
     font-style: italic;
 }
